@@ -57,6 +57,28 @@ body {
   height: 150px;
 }
 
+.anime-item {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  padding: 10px; /* Add padding to create space around the content */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  margin-bottom: 20px; /* Add margin between cards */
+}
+
+.anime-item img {
+  width: 100%; /* Make images fill the card width */
+  border-radius: 10px; /* Add border radius for rounded image corners */
+}
+
+.anime-item h3 {
+  margin-top: 10px; /* Add margin above title */
+}
+
+.anime-item p {
+  margin-top: 10px; /* Add margin above paragraphs */
+}
+
+
 .menu-toggle {
     display: none;
     flex-direction: column;

@@ -1,0 +1,105 @@
+
+body {
+   
+    background-image: url('wallpaperflare.com_wallpaper (11).jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Additional styles for anime gallery */
+.anime-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  
+}
+
+.anime-gallery img {
+  width: 100%;
+  height: 150px;
+}
+
+.anime-item {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  padding: 10px; /* Add padding to create space around the content */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  margin-bottom: 20px; /* Add margin between cards */
+}
+
+.anime-item img {
+  width: 100%; /* Make images fill the card width */
+  border-radius: 10px; /* Add border radius for rounded image corners */
+}
+
+.anime-item h3 {
+  margin-top: 10px; /* Add margin above title */
+}
+
+.anime-item p {
+  margin-top: 10px; /* Add margin above paragraphs */
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px,10px;
+  }
+  
+  .content {
+    min-height: calc(100vh - 150px); 
+  }
+  
