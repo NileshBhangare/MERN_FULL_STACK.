@@ -1,0 +1,28 @@
+HashSet:
+Faster operations like add, remove, contains, size, etc.
+It allows null element.
+It is non-synchronized.
+HashSet maintains no order.
+
+LinkedHashSet:
+Maintains the insertion order.
+It allows null element.
+It is non-synchronized.
+High memory as it maintains the insertion order.
+Slower than HashSet if elements are more.
+
+TreeSet:
+Maintains ascending order.
+It does not allow null element.
+It is non-synchronized.
+It is slow.
+Easy to find the smallest and largest elements.
+
+SortedSet:
+It is an interface that extends Set.
+It maintains the elements in ascending order.
+
+NavigableSet:
+It is an interface that extends SortedSet.
+It provides navigation methods like lower, floor, ceiling, higher etc.
+It inherits the complexity of SortedSet.
