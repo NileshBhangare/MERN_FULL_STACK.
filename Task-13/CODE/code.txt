@@ -1,0 +1,181 @@
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+        Queue q = new Queue();
+        q.enqueue(1);
+        q.enqueue(2);
+        q.enqueue(3);
+        System.out.println("Queue:");
+        while (!q.isEmpty()) {
+            System.out.println(q.dequeue());
+        }
+
+        PrimaryQueue pq = new PrimaryQueue();
+        pq.enqueue(1);
+        pq.enqueue(2);
+        pq.enqueue(3);
+        System.out.println("\nPrimary Queue:");
+        while (!pq.isEmpty()) {
+            System.out.println(pq.dequeue());
+        }
+
+        Deque d = new Deque();
+        d.addFront(1);
+        d.addFront(2);
+        d.addRear(3);
+        System.out.println("\nDeque:");
+        while (!d.isEmpty()) {
+            System.out.println(d.removeFront());
+        }
+
+        ArrayDeque ad = new ArrayDeque();
+        ad.addFront(1);
+        ad.addFront(2);
+        ad.addRear(3);
+        System.out.println("\nArray Deque:");
+        while (!ad.isEmpty()) {
+            System.out.println(ad.removeRear());
+        }
+    }
+}
+
+// Implementation of a basic queue
+class Queue {
+    private LinkedList<Integer> items;
+
+    public Queue() {
+        items = new LinkedList<>();
+    }
+
+    public void enqueue(int item) {
+        items.addLast(item);
+    }
+
+    public int dequeue() {
+        if (!isEmpty()) {
+            return items.removeFirst();
+        } else {
+            return -1; // or throw an exception
+        }
+    }
+
+    public boolean isEmpty() {
+        return items.isEmpty();
+    }
+
+    public int size() {
+        return items.size();
+    }
+}
+
+// Implementation of a primary queue
+class PrimaryQueue {
+    private LinkedList<Integer> items;
+
+    public PrimaryQueue() {
+        items = new LinkedList<>();
+    }
+
+    public void enqueue(int item) {
+        items.addLast(item);
+    }
+
+    public int dequeue() {
+        if (!isEmpty()) {
+            return items.removeFirst();
+        } else {
+            return -1; // or throw an exception
+        }
+    }
+
+    public boolean isEmpty() {
+        return items.isEmpty();
+    }
+
+    public int size() {
+        return items.size();
+    }
+}
+
+// Implementation of a deque
+class Deque {
+    private LinkedList<Integer> items;
+
+    public Deque() {
+        items = new LinkedList<>();
+    }
+
+    public void addFront(int item) {
+        items.addFirst(item);
+    }
+
+    public void addRear(int item) {
+        items.addLast(item);
+    }
+
+    public int removeFront() {
+        if (!isEmpty()) {
+            return items.removeFirst();
+        } else {
+            return -1; // or throw an exception
+        }
+    }
+
+    public int removeRear() {
+        if (!isEmpty()) {
+            return items.removeLast();
+        } else {
+            return -1; // or throw an exception
+        }
+    }
+
+    public boolean isEmpty() {
+        return items.isEmpty();
+    }
+
+    public int size() {
+        return items.size();
+    }
+}
+
+// Implementation of an array deque
+class ArrayDeque {
+    private LinkedList<Integer> items;
+
+    public ArrayDeque() {
+        items = new LinkedList<>();
+    }
+
+    public void addFront(int item) {
+        items.addFirst(item);
+    }
+
+    public void addRear(int item) {
+        items.addLast(item);
+    }
+
+    public int removeFront() {
+        if (!isEmpty()) {
+            return items.removeFirst();
+        } else {
+            return -1; // or throw an exception
+        }
+    }
+
+    public int removeRear() {
+        if (!isEmpty()) {
+            return items.removeLast();
+        } else {
+            return -1; // or throw an exception
+        }
+    }
+
+    public boolean isEmpty() {
+        return items.isEmpty();
+    }
+
+    public int size() {
+        return items.size();
+    }
+}
